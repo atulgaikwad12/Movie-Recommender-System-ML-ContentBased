@@ -32,6 +32,14 @@ logging.basicConfig(
 )
 
 
+#Streamlit configuration & other config details mentioned in .streamlit/config.toml file 
+st.set_page_config(
+   page_title="Movie Recommender App",
+   page_icon="🧊",
+   layout="wide",
+   initial_sidebar_state="expanded",
+)
+
 def fetch_poster(movie_id):
     '''
     Author          : atul.gaikwad
@@ -104,8 +112,8 @@ def recommend(movie):
 try:
     logging.info(f"Starting application...")
 
-    st.title('Movie Recommender')
-    st.header('Content Based Recommendation System Using Machine Learning')
+    #st.title('Movie Recommender')
+    st.header('Content Based Movie Recommendation System')
     movies = pickle.load(open('artifacts/movie_list.pkl','rb'))
 
     movie_list = movies['title'].values

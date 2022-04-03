@@ -48,33 +48,33 @@ here is a demo,
 # How to run?
 ### STEPS:
 
-Clone the repository
+#### Clone the repository in local directory
 
 ```bash
-https://github.com/entbappy/Movie-Recommender-System-Using-Machine-Learning.git
+git clone https://github.com/atulgaikwad12/Movie-Recommender-System-ML-ContentBased.git
 ```
 ### STEP 01- Create a conda environment after opening the repository
 
 ```bash
-conda create -n movie python=3.7.10 -y
+conda create -n envmovie python=3.7.10 -y
 ```
 
 ```bash
-conda activate movie
+conda activate envmovie
 ```
-
 
 ### STEP 02- install the requirements
 ```bash
 pip install -r requirements.txt
 ```
 
-#### open jupyter notebook run with current env
+
+#### Open jupyter notebook run with current env
 ```bash
 jupyter-notebook
 ```
 
-#### Download data set from below location and unzip in data folder 
+#### Can Download data set from below location and unzip in data folder 
 https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata/download
 
 
@@ -87,6 +87,16 @@ Movie Recommender System Data Analysis.ipynb
 Now run,
 ```bash
 streamlit run app.py
+```
+
+#### Create repository on github and execute below commands to push code 
+```bash
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin your_new_github_repo_url
+git push -u origin main
 ```
 
 
