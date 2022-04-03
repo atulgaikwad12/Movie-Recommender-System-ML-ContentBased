@@ -1,0 +1,26 @@
+artifacts_dir: artifacts
+LOG_DIR: logs
+LOG_FILENAME: recommender.log
+
+artifacts:
+  movielist_filename: movie_list.pkl
+  similarity_filename: similarity.pkl
+
+data:
+  source_url: "https://download.microsoft.com/download/3/E/1/3E1C3F21-ECDB-4869-8368-6DEBA77B919F/kagglecatsanddogs_3367a.zip"
+  local_dir: data
+  data_file: archive.zip
+  unzip_data_dir: data
+  baddata_filename: bad_data.csv
+  credits_filename: tmdb_5000_credits.csv
+  movies_fiilename: tmdb_5000_movies.csv
+  
+params:
+  max_features: 5000
+  stop_words: english
+
+webpage:
+  default_img_path: "demo\\6.jpeg"
+  display_recomendation: 12 # threshold is 20
+  movie_per_row: 3
+

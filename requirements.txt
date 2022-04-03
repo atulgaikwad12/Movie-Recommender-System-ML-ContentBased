@@ -1,0 +1,14 @@
+### dependency
+streamlit
+nltk
+notebook
+PyYAML
+pandas
+numpy
+sklearn
+python-dotenv
+mlflow
+
+
+### local packages -
+-e . 
