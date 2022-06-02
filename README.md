@@ -29,7 +29,7 @@ Note - Number of similar movies to be displayed is configurable due to parameter
 
 Also, have a look at deployed project,
 
-* [Click here to run it live on server](https://movie-recommeder-system.herokuapp.com/)
+* [Click here to run it live on server](https://share.streamlit.io/atulgaikwad12/movie-recommender-system-ml-contentbased/main/app.py)
 
 
 # Demo:
@@ -99,6 +99,39 @@ git branch -M main
 git remote add <origin your_new_github_repo_url>
 git push -u origin main
 ```
+
+#### To push large files use below commands 
+##### Download and install the Git lfs command line extension.
+```bash
+git lfs install
+```
+##### select the file types you'd like Git LFS to manage
+```bash
+git lfs track "*.pkl"
+git lfs track "*.png"
+git lfs track "*.jpeg"
+```
+##### To make sure .gitattributes is tracked
+```bash
+git add .gitattributes
+```
+##### Add large files or simply all in staging area
+```bash
+git add .
+```
+##### Finally commit and push (may have to solve some conflict on push) 
+```bash
+git commit -m "Add design file"
+git push origin main  
+```
+#### To deploy application on streamlit share 
+##### 1. Signup in streamlit share using github account OAuth and Create New app
+##### 2. Select Github repository and branch
+##### 3. Add scerate tmdb_key in TOML format
+```bash
+tmdb_key = "API_KEY_STRING"
+```
+##### 4. Deploy app
 
 
 
