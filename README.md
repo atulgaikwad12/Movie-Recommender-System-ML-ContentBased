@@ -71,26 +71,26 @@ pip install -r requirements.txt
 ```
 
 
-#### Open jupyter notebook run with current env
+### STEP 03- Open jupyter notebook run with current env
 ```bash
 jupyter-notebook
 ```
 
-#### Can Download data set from below location and unzip in data folder 
+### STEP 04- Can Download data set from below location and unzip in data folder 
 https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata/download
 
-#### Run below jupyter notebook to do data preprocessing, generate artifacts of distances, movies that can be used further to get end result.
+### STEP 05- Run below jupyter notebook to do data preprocessing, generate artifacts of distances, movies that can be used further to get end result.
 Note - Find generated pickel files in artifcats folder    
 ```bash
 Movie Recommender System Data Analysis.ipynb
 ```
 
-#### To run application use below command
+### STEP 06- To run application use below command
 ```bash
 streamlit run app.py
 ```
 
-#### Create repository on github and execute below commands to push code 
+### STEP 07- Create repository on github and execute below commands to push code 
 ```bash
 git init
 git add .
@@ -100,38 +100,38 @@ git remote add <origin your_new_github_repo_url>
 git push -u origin main
 ```
 
-#### To push large files use below commands 
-##### Download and install the Git lfs command line extension.
+### STEP 08- To push large files use below commands 
+#### Download and install the Git lfs command line extension.
 ```bash
 git lfs install
 ```
-##### select the file types you'd like Git LFS to manage
+#### select the file types you'd like Git LFS to manage
 ```bash
 git lfs track "*.pkl"
 git lfs track "*.png"
 git lfs track "*.jpeg"
 ```
-##### To make sure .gitattributes is tracked
+#### To make sure .gitattributes is tracked
 ```bash
 git add .gitattributes
 ```
-##### Add large files or simply all in staging area
+#### Add large files or simply all in staging area
 ```bash
 git add .
 ```
-##### Finally commit and push (may have to solve some conflict on push) 
+#### Finally commit and push (may have to solve some conflict on push) 
 ```bash
 git commit -m "Add design file"
 git push origin main  
 ```
-#### To deploy application on streamlit share 
-##### 1. Signup in streamlit share using github account OAuth and Create New app
-##### 2. Select Github repository and branch
-##### 3. Add scerate tmdb_key in TOML format
+### STEP 09- To deploy application on streamlit share 
+#### 1. Signup in streamlit share using github account OAuth and Create New app
+#### 2. Select Github repository and branch
+#### 3. Add scerate tmdb_key in TOML format
 ```bash
 tmdb_key = "API_KEY_STRING"
 ```
-##### 4. Deploy app
+#### 4. Deploy app
 
 
 
