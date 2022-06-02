@@ -1,1 +1,10 @@
-# add ci-cd steps here
+name: Movie Recommendation System
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+jobs:
+  testing:
