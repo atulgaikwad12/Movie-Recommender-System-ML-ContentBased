@@ -1,7 +1,7 @@
 name: Sync to Hugging Face hub
 on:
   push:
-    branches: [main]
+    branches: [hf_prod]
 
   # to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -18,4 +18,4 @@ jobs:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
           HF_USERNAME: "atulgaikwad12"
           FULL_SPACE_NAME: "atulgaikwad12/Movie-Recommender-System-ML-ContentBased"
-        run: git push --force https://$HF_USERNAME:$HF_TOKEN@huggingface.co/spaces/$FULL_SPACE_NAME main
+        run: git push --force https://$HF_USERNAME:$HF_TOKEN@huggingface.co/spaces/$FULL_SPACE_NAME hf_prod
