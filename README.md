@@ -12,7 +12,7 @@ The purpose of a recommendation system basically is to search for content that w
 3. Hybrid based
 
 #### Content Based - 
-Recommend based on similiarty of content. Example Iron Man and Iron Man 2 are similia.
+Recommend based on similiarty of content. Example Iron Man and Iron Man 2 are similar.
 #### Collabrative Filtering Based - 
 lets say customer 1 and customer 2 have similar kind of interest becuase for most of the movies they 
 have given simmilar ratings. 
@@ -24,8 +24,10 @@ Both content and collabrative filtering used in hybrid based recommendation
 
 # About this project:
 
-This is a streamlit web application that can recommend various kinds of similar movies based on an user interest.
-here is a demo,
+This is a web application that recommends similar kinds movies to user based on its search input. It is using streamlit to provide UI and precalculated distnaces between vectors for recommendations. To calculate distance between two vectors we have used cosine similarity.  
+Note - Number of similar movies to be displayed is configurable due to parameters of "configs/config.yaml" file.
+
+Also, have a look at deployed project,
 
 * [Click here to run it live on server](https://movie-recommeder-system.herokuapp.com/)
 
@@ -77,14 +79,13 @@ jupyter-notebook
 #### Can Download data set from below location and unzip in data folder 
 https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata/download
 
-
+#### Run below jupyter notebook to do data preprocessing, generate artifacts of distances, movies that can be used further to get end result.
+Note - Find generated pickel files in artifcats folder    
 ```bash
-#run this file to generate the models
-
 Movie Recommender System Data Analysis.ipynb
 ```
 
-Now run,
+#### To run application use below command
 ```bash
 streamlit run app.py
 ```
@@ -95,7 +96,7 @@ git init
 git add .
 git commit -m "first commit"
 git branch -M main
-git remote add origin your_new_github_repo_url
+git remote add <origin your_new_github_repo_url>
 git push -u origin main
 ```
 
